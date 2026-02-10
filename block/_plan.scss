@@ -1,0 +1,42 @@
+.plan {
+  padding: 120px 0;
+  background: #fefcf7;
+}
+
+.plan__wrapper {
+  display: flex;
+  gap: 120px;
+}
+
+.plan__sidebar {
+  ul {
+    list-style: none;
+  }
+
+  li {
+    font-size: 24px;
+    font-weight: 700;
+    color: #83888f;
+    padding: 24px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+
+    span {
+      color: #adb0b5;
+    }
+
+    &.active {
+      color: #333d4b;
+
+      span {
+        color: #0e8784;
+      }
+    }
+  }
+}
+
+.plan__content {
+  flex: 1;
+}

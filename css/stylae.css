@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background: #fefcf7;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.header {
+  padding: 32px 0;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.logo__icon {
+  width: 20px;
+  height: 20px;
+  background: #0e8784;
+  border-radius: 50%;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+}
+.nav a {
+  text-decoration: none;
+  color: #83888f;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.hero {
+  background-image: url(./imgs/hero_img.png);
+  border-radius: 12px;
+  margin-bottom: 160px;
+}
+.hero__content {
+  padding: 120px 80px;
+  color: #fff;
+  max-width: 600px;
+}
+.hero__content h1 {
+  font-size: 72px;
+  margin-bottom: 24px;
+}
+.hero__content p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.steps {
+  background: linear-gradient(180deg, #2c343e, #1f252d);
+  border-radius: 12px;
+  padding: 100px 0;
+  color: #fefcf7;
+}
+.steps__line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 760px;
+  margin-bottom: 80px;
+}
+.steps__line::before {
+  content: "";
+  position: absolute;
+  width: 760px;
+  height: 2px;
+  background: #fdd6ba;
+}
+.steps__line span {
+  width: 28px;
+  height: 28px;
+  border: 2px solid #0e8784;
+  border-radius: 50%;
+  background: #2c343e;
+  z-index: 1;
+}
+.steps__items {
+  display: flex;
+  gap: 80px;
+}
+
+.step {
+  max-width: 285px;
+}
+.step h2 {
+  font-size: 72px;
+  color: #fdd6ba;
+  margin-bottom: 38px;
+}
+.step h3 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+.step p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.plan {
+  padding: 120px 0;
+  background: #fefcf7;
+}
+
+.plan__wrapper {
+  display: flex;
+  gap: 120px;
+}
+
+.plan__sidebar ul {
+  list-style: none;
+}
+.plan__sidebar li {
+  font-size: 24px;
+  font-weight: 700;
+  color: #83888f;
+  padding: 24px 0;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.plan__sidebar li span {
+  color: #adb0b5;
+}
+.plan__sidebar li.active {
+  color: #333d4b;
+}
+.plan__sidebar li.active span {
+  color: #0e8784;
+}
+
+.plan__content {
+  flex: 1;
+}
+
+.question {
+  margin-bottom: 96px;
+}
+
+.question__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 56px;
+}
+.question__header h2 {
+  font-size: 40px;
+  color: #83888f;
+}
+.question__header .arrow {
+  width: 16px;
+  height: 16px;
+  border-right: 3px solid #0e8784;
+  border-bottom: 3px solid #0e8784;
+  transform: rotate(45deg);
+}
+
+.options {
+  display: flex;
+  gap: 24px;
+}
+
+.option {
+  background: #f4f1eb;
+  padding: 32px;
+  border-radius: 8px;
+  flex: 1;
+  cursor: pointer;
+}
+.option h3 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  color: #333d4b;
+}
+.option p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333d4b;
+  opacity: 0.8;
+}
+.option.active {
+  background: #0e8784;
+}
+.option.active h3,
+.option.active p {
+  color: #fff;
+}
+
+.summary {
+  background: linear-gradient(180deg, #2c343e, #1f252d);
+  padding: 48px 64px;
+  border-radius: 10px;
+  margin: 80px 0 48px;
+  color: #fff;
+}
+.summary span {
+  font-size: 16px;
+  letter-spacing: 1px;
+  opacity: 0.5;
+  display: block;
+  margin-bottom: 16px;
+}
+.summary p {
+  font-size: 24px;
+  line-height: 1.6;
+}
+.summary p b {
+  color: #0e8784;
+}
+
+.plan-btn {
+  background: #66d2cf;
+  border: none;
+  padding: 16px 40px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.footer {
+  background: #2c343e;
+  padding: 48px 0;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__left {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+.footer__logo span {
+  width: 20px;
+  height: 20px;
+  background: #0e8784;
+  border-radius: 50%;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 32px;
+}
+.footer__nav a {
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #83888f;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 24px;
+}
+.footer__socials a {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+}/*# sourceMappingURL=stylae.css.map */

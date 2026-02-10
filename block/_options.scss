@@ -1,0 +1,35 @@
+
+.options {
+  display: flex;
+  gap: 24px;
+}
+
+.option {
+  background: #f4f1eb;
+  padding: 32px;
+  border-radius: 8px;
+  flex: 1;
+  cursor: pointer;
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #333d4b;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333d4b;
+    opacity: 0.8;
+  }
+
+  &.active {
+    background: #0e8784;
+
+    h3,
+    p {
+      color: #fff;
+    }
+  }
+}

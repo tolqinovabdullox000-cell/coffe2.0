@@ -1,0 +1,23 @@
+.question {
+  margin-bottom: 96px;
+}
+
+.question__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 56px;
+
+  h2 {
+    font-size: 40px;
+    color: #83888f;
+  }
+
+  .arrow {
+    width: 16px;
+    height: 16px;
+    border-right: 3px solid #0e8784;
+    border-bottom: 3px solid #0e8784;
+    transform: rotate(45deg);
+  }
+}
